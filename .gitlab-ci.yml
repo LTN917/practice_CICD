@@ -1,6 +1,6 @@
 # job
 run_tests:
-    image: python:3.9-slim
+    image: python:3.9-slim-buster
     # before
     before_script:
         - apt-get update && apt-get install make
