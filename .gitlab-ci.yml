@@ -1,0 +1,9 @@
+# job
+run_tests:
+    image: python:3.9-slim
+    # before
+    before_script:
+        - apt-get update && apt-get install make
+    # main 
+    script:
+        - make test
