@@ -19,6 +19,8 @@ build_image:
     # sub service image  
     services: 
         - docker:24.0.6-dind #(Docker Daemon, processing docker CLI, like build、run、pull...)
+    variables:
+        DOCKER_TLS_CERTDIR: "/certs"
     before_script:
         - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
     script:
