@@ -4,7 +4,6 @@ run_tests:
     # before
     before_script:
         - apt-get update && apt-get install make
-        - pip install --upgrade Flask jinja2 markupsafe
     # main 
     script:
         - make test
