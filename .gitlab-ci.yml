@@ -4,8 +4,8 @@ run_tests:
     # before
     before_script:
         - apt-get update && apt-get install make
-        - pip install --upgrade Flask jinja2
-        - pip uninstall jinja2 && pip install jinja2
+        - pip install --upgrade Flask
+        - pip install jinja2==2.11.3
     # main 
     script:
         - make test
