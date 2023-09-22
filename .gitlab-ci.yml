@@ -5,6 +5,7 @@ run_tests:
     before_script:
         - apt-get update && apt-get install make
         - pip install --upgrade Flask jinja2
+        - pip uninstall jinja2 && pip install jinja2
     # main 
     script:
         - make test
