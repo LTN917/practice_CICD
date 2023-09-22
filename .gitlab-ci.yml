@@ -6,6 +6,7 @@ run_tests:
         - apt-get update && apt-get install make
         - pip install --upgrade Flask
         - pip install jinja2==2.11.3
+        - python -c "import jinja2; print(jinja2.__version__)"
     # main 
     script:
         - make test
