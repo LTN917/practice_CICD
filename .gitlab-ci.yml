@@ -4,9 +4,7 @@ run_tests:
     # before
     before_script:
         - apt-get update && apt-get install make
-        - pip install --upgrade Flask
-        - pip install jinja2==3.1.2
-        - python -c "import jinja2; print(jinja2.__version__)"
+        - pip install --upgrade Flask jinja2 markupsafe
     # main 
     script:
         - make test
