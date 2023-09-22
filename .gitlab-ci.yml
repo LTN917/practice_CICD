@@ -3,8 +3,14 @@ variables:
     IMAGE_NAME: ltnisgod/demo-app
     IMAGE_TAG: python-app-1.0
 
+# stage
+stages:
+    - test
+    - build
+
 # job
 run_tests:
+    stage: test
     image: python:3.9-slim-buster
     before_script:
         - apt-get update && apt-get install make
@@ -14,6 +20,7 @@ run_tests:
 
 # job
 build_image:
+    stage: build
     # base image 
     image: docker:24.0.6 # (whole docker env)
     # sub service image  
