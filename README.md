@@ -1,3 +1,10 @@
+# My_notion
+
+我將遇到的問題跟學到的觀念寫在裡面
+https://www.notion.so/Practice-174df804e3b548a5a219d2d656753da4?pvs=4
+
+----------------------- 以下為原 README.md --------------------------
+
 # Python Flask - Demo Web Application
 
 This is a simple Python Flask web application. The app provides system information and a realtime monitoring screen with dials showing CPU, memory, IO and process information.
